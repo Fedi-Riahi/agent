@@ -3,7 +3,8 @@ from rest_framework.routers import DefaultRouter
 from .views import (
     ProductViewSet, MerchantWebsiteViewSet,
     PriceComparisonViewSet, GovernorateViewSet,
-    MerchantAccountViewSet, PurchaseOrderViewSet
+    MerchantAccountViewSet, PurchaseOrderViewSet,
+    login_view, register_view, start_order_view
 )
 
 router = DefaultRouter()
@@ -16,4 +17,7 @@ router.register(r'orders/api', PurchaseOrderViewSet, basename='order')
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('login/', login_view, name='login'),
+    path('register/', register_view, name='register'),
+    path('start-order/', start_order_view, name='start_order'),
 ]

@@ -96,9 +96,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STRIPE_SECRET_KEY="sk_test_51RTYesQLXTub8uSxqkR3g40MKNszxlUCO0y5E7nidGwcs9XlFGDtfmG0ehrsTrBPAWPiOQ7SEtwzfccItLJpT1xm00heTPHIQQ"
+STRIPE_SECRET_KEY=""
 
-STRIPE_PUBLISHABLE_KEY="pk_test_51RTYesQLXTub8uSxJ37gwdXCpau3FBRnfevC9Ek4mrQbQrodBIwblYAiTJD4WqI7PO3x3ZXJ165MlVeR3cBtOoEH00iBQkqlyd"
+STRIPE_PUBLISHABLE_KEY=""
 
 
 # Security
@@ -123,14 +123,14 @@ CELERY_RESULT_SERIALIZER = 'json'
 
 # Konnect
 KONNECT_CONFIG = {
-    'API_KEY': '67de1ec82f786e7f606aaa14:g9ux9mzOfzBDO4QkH2nIJKr',
+    'API_KEY': env('API_KEY'),
     'MERCHANT_ID': '2XBhXJHi7g5Sdmtu6',
     'CALLBACK_SECRET': 'https://dashboard.sandbox.konnect.network/auth/register?referrerCode=2XBhXJHi7g5Sdmtu6',
     'BASE_URL': 'https://api.konnect.network/api/v2'
 }
 
 # Gemini
-GEMINI_API_KEY = "AIzaSyCLAZ-GNjqEU6AAccdU1ez-E5473S6EcKo"
+GEMINI_API_KEY = env('GEMINI_API_KEY')
 
 # REST Framework
 REST_FRAMEWORK = {

@@ -527,8 +527,8 @@ def place_tunisianet_order(order, comparison):
         submit_button = login_form.find_element(By.CSS_SELECTOR, "button[data-link-action='sign-in']")
 
         # Use hardcoded email and password for Tunisianet login
-        email = "kaiba.work@gmail.com"
-        password = "Kaiba123654"
+        email = ""
+        password = ""
 
         logger.debug(f"Attempting login with email: {email[:8]}****{email[-4:]}")
         email_input.clear()

@@ -96,9 +96,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STRIPE_SECRET_KEY=""
-
-STRIPE_PUBLISHABLE_KEY=""
 
 
 # Security
@@ -124,8 +121,8 @@ CELERY_RESULT_SERIALIZER = 'json'
 # Konnect
 KONNECT_CONFIG = {
     'API_KEY': env('API_KEY'),
-    'MERCHANT_ID': '2XBhXJHi7g5Sdmtu6',
-    'CALLBACK_SECRET': 'https://dashboard.sandbox.konnect.network/auth/register?referrerCode=2XBhXJHi7g5Sdmtu6',
+    'MERCHANT_ID': '',
+    'CALLBACK_SECRET': '',
     'BASE_URL': 'https://api.konnect.network/api/v2'
 }
 

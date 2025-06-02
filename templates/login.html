@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Buyer Assistant | Login</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ai: {
+                            primary: '#6366f1',
+                            secondary: '#8b5cf6',
+                            accent: '#14b8a6',
+                            dark: '#1e293b',
+                            light: '#f8fafc'
+                        }
+                    },
+                    boxShadow: {
+                        'ai': '0 4px 20px rgba(99, 102, 241, 0.15)',
+                        'ai-lg': '0 10px 30px rgba(99, 102, 241, 0.2)'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ai-light min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-6xl bg-white rounded-2xl overflow-hidden shadow-ai-lg">
+        <div class="flex flex-col md:flex-row">
+            <!-- Left Side - Branding -->
+            <div class="bg-gradient-to-br from-ai-primary to-ai-secondary p-8 md:p-12 md:w-1/2 text-white">
+                <div class="flex flex-col h-full">
+                    <div class="mb-8">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <h1 class="text-3xl font-bold">AI Buyer Assistant</h1>
+                        <p class="text-ai-light opacity-90 mt-2">Your smart shopping companion</p>
+                    </div>
+
+                    <div class="mt-auto">
+                        <div class="bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-ai-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                                <div class="ml-3">
+                                    <p class="font-medium">"Saved me $127 on my last electronics purchase!"</p>
+                                    <p class="text-sm opacity-80 mt-1">- Sarah J., Premium User</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Login Form -->
+            <div class="p-8 md:p-12 md:w-1/2">
+                <div class="max-w-md mx-auto">
+                    <h2 class="text-2xl font-bold text-ai-dark">Welcome back</h2>
+                    <p class="text-gray-500 mt-2">Sign in to access your AI shopping assistant</p>
+
+                    {% if messages %}
+                    <div class="mt-6">
+                        {% for message in messages %}
+                        <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                                </svg>
+                                <p class="ml-3 text-sm text-red-700">{{ message }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <form method="POST" action="{% url 'login' %}" class="mt-6 space-y-5">
+                        {% csrf_token %}
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-ai-dark">Email</label>
+                            <div class="mt-1 relative">
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-ai-primary focus:border-ai-primary transition placeholder-gray-400" placeholder="your@email.com">
+                                <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center">
+                                <label for="password" class="block text-sm font-medium text-ai-dark">Password</label>
+                                <a href="#" class="text-sm font-medium text-ai-primary hover:text-ai-secondary">Forgot password?</a>
+                            </div>
+                            <div class="mt-1 relative">
+                                <input type="password" id="password" name="password" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-ai-primary focus:border-ai-primary transition placeholder-gray-400" placeholder="••••••••">
+                                <button type="button" id="toggle-password" class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                    <svg id="show-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 hover:text-ai-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                    <svg id="hide-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 hover:text-ai-dark hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-ai-primary focus:ring-ai-primary border-gray-300 rounded">
+                            <label for="remember-me" class="ml-2 block text-sm text-gray-600">Remember me</label>
+                        </div>
+
+                        <button type="submit" class="w-full bg-ai-primary hover:bg-ai-secondary text-white py-3 px-4 rounded-lg font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ai-primary">
+                            Sign in
+                        </button>
+                    </form>
+
+                    <div class="mt-6">
+                        <div class="relative">
+                            <div class="absolute inset-0 flex items-center">
+                                <div class="w-full border-t border-gray-200"></div>
+                            </div>
+                            <div class="relative flex justify-center text-sm">
+                                <span class="px-2 bg-white text-gray-500">New to AI Buyer?</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <a href="{% url 'register' %}" class="w-full inline-flex justify-center items-center py-2.5 px-4 border border-gray-200 rounded-lg font-medium text-ai-dark hover:bg-gray-50 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ai-primary">
+                                Create an account
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const showIcon = document.getElementById('show-icon');
+            const hideIcon = document.getElementById('hide-icon');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                showIcon.classList.add('hidden');
+                hideIcon.classList.remove('hidden');
+            } else {
+                passwordInput.type = 'password';
+                hideIcon.classList.add('hidden');
+                showIcon.classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('toggle-password').addEventListener('click', togglePassword);
+    </script>
+</body>
+</html>

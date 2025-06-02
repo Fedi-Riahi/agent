@@ -1,0 +1,7 @@
+[
+    {"model": "agent.governorate", "pk": 1, "fields": {"name": "Tunis", "code": "TN"}},
+    {"model": "agent.governorate", "pk": 2, "fields": {"name": "Ariana", "code": "AR"}},
+    {"model": "agent.governorate", "pk": 3, "fields": {"name": "Ben Arous", "code": "BA"}},
+    {"model": "agent.governorate", "pk": 4, "fields": {"name": "Manouba", "code": "MN"}},
+    {"model": "agent.governorate", "pk": 5, "fields": {"name": "Nabeul", "code": "NB"}}
+]

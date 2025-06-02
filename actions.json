@@ -1,0 +1,210 @@
+{
+  "timestamp": 1748689810.1333723,
+  "action_type": "navigate",
+  "element": null,
+  "value": null,
+  "url": "https://www.tunisianet.com.tn"
+}
+{
+  "timestamp": 1748689817.3313046,
+  "action_type": "input",
+  "element": "<input class=\"search_query form-control ui-autocomplete-input\" type=\"text\" id=\"search_query_top\" name=\"s\" placeholder=\"Rechercher\" value=\"\" autocomplete=\"off\">",
+  "value": "laptop ",
+  "url": "https://www.tunisianet.com.tn/"
+}
+{
+  "timestamp": 1748689831.25465,
+  "action_type": "input",
+  "element": "<input type=\"text\" name=\"qty\" id=\"quantity_wanted\" value=\"1\" class=\"input-group form-control\" min=\"1\" aria-label=\"Quantit\u00e9\" style=\"display: block;\">",
+  "value": "1",
+  "url": "https://www.tunisianet.com.tn/pc-portable-tunisie/72965-pc-portable-gigabyte-g5-kf5-i7-13eme-gen-32-go-rtx-4060-8g.html"
+}
+{
+  "timestamp": 1748689844.0670848,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"email\" type=\"email\" value=\"\" required=\"\">",
+  "value": "kaiba.work@gmail.c",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748689852.029349,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"email\" type=\"email\" value=\"\" required=\"\">",
+  "value": "kaiba.work@gmail.com",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748689859.8969548,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"email\" type=\"email\" value=\"\" required=\"\">",
+  "value": "kaiba.work@gmail.com",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748689859.9125764,
+  "action_type": "input",
+  "element": "<input class=\"form-control js-child-focus js-visible-password\" name=\"password\" type=\"password\" value=\"\" pattern=\".{5,}\" required=\"\">",
+  "value": "riahi123654",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748689867.6752,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"email\" type=\"email\" value=\"kaiba.work@gmail.com\" required=\"\">",
+  "value": "kaiba.work@gmail.com",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748689867.690829,
+  "action_type": "input",
+  "element": "<input class=\"form-control js-child-focus js-visible-password\" name=\"password\" type=\"password\" value=\"\" pattern=\".{5,}\" required=\"\">",
+  "value": "R",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748689879.897016,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"email\" type=\"email\" value=\"kaiba.work@gmail.com\" required=\"\">",
+  "value": "kaiba.work@gmail.com",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690054.7933238,
+  "action_type": "navigate",
+  "element": null,
+  "value": null,
+  "url": "https://www.tunisianet.com.tn"
+}
+{
+  "timestamp": 1748690069.6611896,
+  "action_type": "input",
+  "element": "<input type=\"text\" name=\"qty\" id=\"quantity_wanted\" value=\"1\" class=\"input-group form-control\" min=\"1\" aria-label=\"Quantit\u00e9\" style=\"display: block;\">",
+  "value": "1",
+  "url": "https://www.tunisianet.com.tn/pc-portable-tunisie/72965-pc-portable-gigabyte-g5-kf5-i7-13eme-gen-32-go-rtx-4060-8g.html"
+}
+{
+  "timestamp": 1748690081.9004679,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"email\" type=\"email\" value=\"\" required=\"\">",
+  "value": "riahifedi@outlook.fr",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690095.3278894,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"firstname\" type=\"text\" value=\"Riahi\" maxlength=\"255\" required=\"\">",
+  "value": "Riahi",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690095.3465836,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"lastname\" type=\"text\" value=\"Fedi\" maxlength=\"255\" required=\"\">",
+  "value": "Fedi",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690095.4126031,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"address1\" type=\"text\" value=\"\" maxlength=\"128\" required=\"\">",
+  "value": "Hammam Lif",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690095.5905309,
+  "action_type": "select",
+  "element": "<input name=\"use_same_address\" type=\"checkbox\" value=\"1\" checked=\"\">",
+  "value": "",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690103.495149,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"firstname\" type=\"text\" value=\"Riahi\" maxlength=\"255\" required=\"\">",
+  "value": "Riahi",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690103.5263982,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"lastname\" type=\"text\" value=\"Fedi\" maxlength=\"255\" required=\"\">",
+  "value": "Fedi",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690103.5640802,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"address1\" type=\"text\" value=\"\" maxlength=\"128\" required=\"\">",
+  "value": "Hammam Lif",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690103.5953646,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"postcode\" type=\"text\" value=\"\" maxlength=\"12\" required=\"\">",
+  "value": "2050",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690103.611001,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"city\" type=\"text\" value=\"\" maxlength=\"64\" required=\"\">",
+  "value": "Hammam Lif",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690103.6552627,
+  "action_type": "select",
+  "element": "<input name=\"use_same_address\" type=\"checkbox\" value=\"1\" checked=\"\">",
+  "value": "",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690575.705115,
+  "action_type": "navigate",
+  "element": null,
+  "value": null,
+  "url": "https://www.tunisianet.com.tn"
+}
+{
+  "timestamp": 1748690582.7777915,
+  "action_type": "input",
+  "element": "<input class=\"search_query form-control ui-autocomplete-input\" type=\"text\" id=\"search_query_top\" name=\"s\" placeholder=\"Rechercher\" value=\"\" autocomplete=\"off\">",
+  "value": "laptop",
+  "url": "https://www.tunisianet.com.tn/"
+}
+{
+  "timestamp": 1748690590.993647,
+  "action_type": "input",
+  "element": "<input type=\"text\" name=\"qty\" id=\"quantity_wanted\" value=\"1\" class=\"input-group form-control\" min=\"1\" aria-label=\"Quantit\u00e9\" style=\"display: block;\">",
+  "value": "1",
+  "url": "https://www.tunisianet.com.tn/pc-portable-tunisie/72965-pc-portable-gigabyte-g5-kf5-i7-13eme-gen-32-go-rtx-4060-8g.html"
+}
+{
+  "timestamp": 1748690603.4152262,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"email\" type=\"email\" value=\"\" required=\"\">",
+  "value": "riahifedi@outlook",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+{
+  "timestamp": 1748690795.4806736,
+  "action_type": "navigate",
+  "element": null,
+  "value": null,
+  "url": "https://www.tunisianet.com.tn"
+}
+{
+  "timestamp": 1748690808.7001297,
+  "action_type": "input",
+  "element": "<input type=\"text\" name=\"qty\" id=\"quantity_wanted\" value=\"1\" class=\"input-group form-control\" min=\"1\" aria-label=\"Quantit\u00e9\" style=\"display: block;\">",
+  "value": "1",
+  "url": "https://www.tunisianet.com.tn/pc-portable-tunisie/72965-pc-portable-gigabyte-g5-kf5-i7-13eme-gen-32-go-rtx-4060-8g.html"
+}
+{
+  "timestamp": 1748690819.7800763,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"email\" type=\"email\" value=\"\" required=\"\">",
+  "value": "riahifedi@outlook.",
+  "url": "https://www.tunisianet.com.tn/commande"
+}

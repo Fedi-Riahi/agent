@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Order</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto p-4">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Start a New Order</h2>
+        {% if user.is_authenticated %}
+            {% if messages %}
+                <div class="mb-4">
+                    {% for message in messages %}
+                        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <form method="POST" action="{% url 'start_order' %}">
+                {% csrf_token %}
+                <div class="mb-4">
+                    <label for="product_name" class="block text-sm font-medium text-gray-700">Product Name</label>
+                    <input type="text" id="product_name" name="product_name"
+                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                           required placeholder="e.g. PC Portable ASUS TUF Gaming A15">
+                </div>
+                <div class="mb-4">
+                    <label for="shipping_address" class="block text-sm font-medium text-gray-700">Shipping Address</label>
+                    <input type="text" id="shipping_address" name="shipping_address"
+                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                           required>
+                </div>
+                <div class="mb-4">
+                    <label for="contact_phone" class="block text-sm font-medium text-gray-700">Contact Phone</label>
+                    <input type="tel" id="contact_phone" name="contact_phone"
+                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                           required placeholder="+216XXXXXXXX">
+                </div>
+                <div class="mb-4">
+                    <label for="governorate" class="block text-sm font-medium text-gray-700">Select Governorate</label>
+                    <select id="governorate" name="governorate_id" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" required>
+                        <option value="">-- Select a Governorate --</option>
+                        {% for governorate in governorates %}
+                            <option value="{{ governorate.id }}">{{ governorate.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="is_business" class="flex items-center">
+                        <input type="checkbox" id="is_business" name="is_business" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                        <span class="ml-2 text-sm text-gray-700">Business Purchase</span>
+                    </label>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Start Order</button>
+            </form>
+            <div class="mt-4 text-center">
+                <a href="{% url 'orders' %}" class="text-sm text-indigo-600 hover:text-indigo-800">View Order History</a>
+            </div>
+        {% else %}
+            <p class="text-center text-gray-600">Please <a href="{% url 'login' %}" class="text-indigo-600 hover:text-indigo-800">log in</a> to place an order.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

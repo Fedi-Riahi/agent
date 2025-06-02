@@ -1,0 +1,22 @@
+2025-05-31 04:26:35,480 - INFO - {
+  "timestamp": 1748690795.4806736,
+  "action_type": "navigate",
+  "element": null,
+  "value": null,
+  "url": "https://www.tunisianet.com.tn"
+}
+2025-05-31 04:26:48,704 - INFO - {
+  "timestamp": 1748690808.7001297,
+  "action_type": "input",
+  "element": "<input type=\"text\" name=\"qty\" id=\"quantity_wanted\" value=\"1\" class=\"input-group form-control\" min=\"1\" aria-label=\"Quantit\u00e9\" style=\"display: block;\">",
+  "value": "1",
+  "url": "https://www.tunisianet.com.tn/pc-portable-tunisie/72965-pc-portable-gigabyte-g5-kf5-i7-13eme-gen-32-go-rtx-4060-8g.html"
+}
+2025-05-31 04:26:59,784 - INFO - {
+  "timestamp": 1748690819.7800763,
+  "action_type": "input",
+  "element": "<input class=\"form-control\" name=\"email\" type=\"email\" value=\"\" required=\"\">",
+  "value": "riahifedi@outlook.",
+  "url": "https://www.tunisianet.com.tn/commande"
+}
+2025-05-31 04:27:22,896 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002CEA0849970>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/90bfa545-41cc-487d-b599-1a508e0e58b3/execute/sync

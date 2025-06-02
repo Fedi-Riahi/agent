@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+graphene-django = "*"
+celery = "*"
+redis = "*"
+django-cors-headers = "*"
+django-environ = "*"
+requests = "*"
+beautifulsoup4 = "*"
+google-generativeai = "*"
+selenium = "*"
+cryptography = "*"
+pyjwt = "*"
+environ = "*"
+python-dotenv = "*"
+rest-framework-simplejwt = "*"
+django-tailwind = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.10"
